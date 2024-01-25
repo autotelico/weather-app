@@ -1,4 +1,4 @@
-This is a weather app for practicing API and async/await uses.
+This is a TypeScript-based weather app for practicing API, try..catch, and async/await uses.
 
 ## How to Use
 All you have to do is type in the city you want to know the current weather of! Type in the city inside the field:

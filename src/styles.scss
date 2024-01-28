@@ -122,3 +122,8 @@ button:not(#search-button) {
     cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+    #content {
+        max-width: 720px;
+    }
+}

@@ -93,6 +93,7 @@ body {
 }
 
 #city {
+  position: relative;
   width: 100px;
 }
 
@@ -123,6 +124,10 @@ button:not(#search-button) {
   cursor: pointer;
 }
 
+#search-button {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   #content {
     max-width: 720px;
@@ -131,14 +136,26 @@ button:not(#search-button) {
     width: 200px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   #city {
     width: 200px;
+    margin: 10px 0;
   }
   #search-button {
-    position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  #city {
+    width: 180px;
+  }
+  #search-button {
     margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content {
+    width: 80vw;
   }
 }/*# sourceMappingURL=styles.css.map */

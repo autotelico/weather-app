@@ -44,8 +44,8 @@ body {
   margin: 30px auto 0 auto;
   padding: 10px;
   border-radius: 15px;
-  height: 700px;
-  width: 800px;
+  min-height: 700px;
+  max-width: 360px;
   background-color: #ddd;
   border: 3px solid gray;
 }
@@ -95,6 +95,10 @@ body {
   transform: translateX(-50%);
 }
 
+#city {
+  width: 100px;
+}
+
 .small-container {
   display: grid;
   grid-template: 1fr/1fr 1fr;
@@ -112,8 +116,9 @@ body {
 }
 
 button:not(#search-button) {
-  width: 100px;
-  height: 50px;
+  width: 60px;
+  height: 30px;
+  padding: 5px;
   border: none;
   border-radius: 15px;
   margin-top: 5px;

@@ -125,3 +125,9 @@ button:not(#search-button) {
   background-color: #E4E6C3;
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+  #content {
+    max-width: 720px;
+  }
+}

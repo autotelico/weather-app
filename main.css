@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(479d9694335c9ddb39a4.jpg);
+  background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +46,6 @@ body {
   padding: 10px;
   border-radius: 15px;
   min-height: 700px;
-  max-width: 360px;
   background-color: #ddd;
   border: 3px solid gray;
 }
@@ -54,7 +54,8 @@ body {
   text-align: center;
 }
 
-#content h2, #content label {
+#content h2,
+#content label {
   font-weight: 700;
 }
 
@@ -98,6 +99,15 @@ body {
 #city {
   position: relative;
   width: 100px;
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 25px;
+  padding-left: 10px;
+}
+
+#city:focus {
+  border: 1px solid blue;
 }
 
 .small-container {
@@ -123,25 +133,26 @@ button:not(#search-button) {
   border: none;
   border-radius: 15px;
   margin-top: 5px;
-  background-color: #E4E6C3;
+  background-color: #e4e6c3;
   cursor: pointer;
 }
 
 #search-button {
   position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 10px;
+  border: 3px solid royalblue;
+  border-radius: 25px;
+  background-color: darkblue;
+  color: white;
+  width: 70px;
 }
 
-@media screen and (min-width: 768px) {
-  #content {
-    max-width: 720px;
-  }
-  #city {
-    width: 200px;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 375px) {
   #city {
-    width: 200px;
+    width: 100%;
     margin: 10px 0;
   }
   #search-button {
@@ -149,16 +160,26 @@ button:not(#search-button) {
     transform: translateX(-50%);
   }
 }
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
   #city {
-    width: 180px;
+    width: 100%;
+    margin-bottom: 10px;
   }
   #search-button {
-    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  #city {
+    width: 325px;
   }
 }
 @media screen and (min-width: 768px) {
   #content {
-    width: 80vw;
+    width: 600px;
+  }
+  #city {
+    width: 400px;
   }
 }
